@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Health Risks vs. demographics</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/d3Style.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Health Risks vs. Demographics</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/d3Style.css">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Health Risks vs. Demographics</a>
         </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-12">
-          <h1>Population With Health Risks</h1>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Health Risks in the Amercican Population</h1>
       </div>
-      <div class="row">
-        <div class="col-xs-12  col-md-9">
-          <div id="scatter">
-            <!-- We append our chart here. -->
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12  col-md-9">
-          <div class="article">
-            <h2>
-              Correlations Discovered Between Health Risks and Age, Income
-            </h2>
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
-            </p>
-
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
-            </p>
-
-            <p>
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
-              vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
-              amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
-              placerat eleifend leo.
-            </p>
-          </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-9">
+        <div id="scatter">
+          
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="article">
+          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
+              <p>The charts, here scatter plots, display several positive correlation especially obesity, smoking and lack healthcare to the Poverty.
+                In another world, the wealthier the state, the feweer health issue you have. Nevertheless, the visualizations indicate that the trends 
+                are not absolute because we can identify some outliers. We can then identify North Dakota and Iowa who have a low poverty percentage by
+                a high obesity rate.</p>
+              <p>Some other element such as the Age are more difficult to explain. For all the three healthcare issue and lack of subscription, we can observe 
+              that there is a cluster and most of the US states have their median ages between 36-40 years old. However, we can define some trends. the higher
+               is the age median, the higher is the smoking percentage. This applies also to the obesity. At contrary, the higher is the age, lthe more subscriptions 
+               you have to healthcare program.</p>
+               <p> In the same direction, the higher the median income the more people subscribe to healthcare program and the less people are subject to obesity or smoking.. 
 
-    <!-- Footer-->
-    <div id="footer">
-        <p>© 2020 Copyright - Sylvain David. All Rights Reserved.</p>
+               </p>       
+        </div>
       </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="static/js/bonus.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>© 2020 Copyright - Sylvain David</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="static/js/app.js"></script>
+
+</body>
+
 </html>
